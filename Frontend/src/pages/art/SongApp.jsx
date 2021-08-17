@@ -1,22 +1,23 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import { ArtList } from '../../cmps/art/ArtList.jsx';
-import { loadArts } from '../../store/art/art.action.js';
+import { SongList } from '../../cmps/art/SongList.jsx';
+import { loadSongs } from '../../store/song/song.action.js';
 import { loadUsers } from "../../store/user/user.action.js";
 
-class _ArtApp extends React.Component {
+class _SongApp extends React.Component {
+
   componentDidMount() {
-    this.props.loadArts();
+    this.props.loadSongs();
     this.props.loadUsers();
   }
   render() {
-    const { arts } = this.props;
+    const { songs } = this.props;
     return (
       <div>
         <div className='main-container'>
           <section className='art-container'>
             <main>
-              <ArtList arts={arts} />
+              <SongList songs={songs} />
             </main>
           </section>
         </div>
@@ -25,15 +26,15 @@ class _ArtApp extends React.Component {
   }
 }
 
-function mapStateToProps({ artModule }) {
+function mapStateToProps({ songModule }) {
   return {
-    arts: artModule.arts,
+    songs: songModule.songs,
   };
 }
 
 const mapDispatchToProps = {
-  loadArts,
+  loadSongs,
   loadUsers
 };
 
-export const ArtApp = connect(mapStateToProps, mapDispatchToProps)(_ArtApp);
+export const SongApp = connect(mapStateToProps, mapDispatchToProps)(_SongApp);

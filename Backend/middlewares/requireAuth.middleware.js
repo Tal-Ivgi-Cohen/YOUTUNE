@@ -8,10 +8,10 @@ async function requireAuth(req, res, next) {
   next()
 }
 
-async function requireArtist(req, res, next) {
+async function requireSinger(req, res, next) {
   const user = req.session.user
   console.log(user);
-  if (!user.isArtist) {
+  if (!user.isSinger) {
     logger.warn(user.fullname + ' Attempt to perform admin action')
     res.status(403).end('Unauthorized Enough..')
     return
@@ -19,10 +19,7 @@ async function requireArtist(req, res, next) {
   next()
 }
 
-
-// module.exports = requireAuth
-
 module.exports = {
   requireAuth,
-  requireArtist
+  requireSinger
 }

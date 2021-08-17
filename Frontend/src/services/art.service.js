@@ -1,10 +1,6 @@
 import { httpService } from './http.service.js';
-//import { storageService } from './art-storage.service.js';
-
-//const STORAGE_KEY = 'arts';
 
 export const artService = {
-    // query,
     getById,
     save,
     remove,

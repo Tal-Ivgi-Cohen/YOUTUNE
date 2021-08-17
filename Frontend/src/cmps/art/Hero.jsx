@@ -8,15 +8,15 @@ export class Hero extends React.Component {
     return (
       <div className="carousel-container">
         <div className="main-hero-content">
-        <h1>Discover & Purchase art by top artists</h1>
+        <h1>Pop Music Listener</h1>
         </div>
       
           <Carousel className="heros-container">
-            <img src="//cdn.shopify.com/s/files/1/0941/7736/files/EthanCaflisch-Banner001_2048x.jpg?v=1622560162" alt="EthanCaflisch" />
-            <img src="//cdn.shopify.com/s/files/1/0941/7736/files/fn_Banner02_2048x.jpg?v=1622560108" alt="Banner" />
-            <img src="//cdn.shopify.com/s/files/1/0941/7736/files/ErikoTsogo-Banner02_4e4b90b9-1a59-4927-abe7-2f8e48cd1a80_2048x.jpg?v=1621907690" alt="ErikoTsogo" />
-            <img src="//cdn.shopify.com/s/files/1/0941/7736/files/MayVIPPreview-Banner01_2048x.jpg?v=1621475373" alt="MayVIP" />
-            <img src="//cdn.shopify.com/s/files/1/0941/7736/files/SaraMarloweHall-Banner01_2048x.jpg?v=1621301210" alt="SaraMarloweHall" />
+            <img src="//cdn.pixabay.com/photo/2015/01/20/13/13/samsung-605439_960_720.jpg" alt="samsung" />
+            <img src="//cdn.pixabay.com/photo/2015/10/08/00/24/woman-977020__340.jpg" alt="woman with headphones" />
+            <img src="//cdn.pixabay.com/photo/2020/01/31/07/53/man-4807395_960_720.jpg" alt="man" />
+            <img src="//cdn.pixabay.com/photo/2015/10/12/15/13/boy-984293_960_720.jpg" alt="boy" />
+            <img src="//cdn.pixabay.com/photo/2016/11/19/10/01/woman-1838412__340.jpg" alt="woman-1" />
           </Carousel>
         </div>
 

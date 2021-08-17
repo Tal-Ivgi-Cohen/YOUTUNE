@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function ArtPreview({ art }) {
+export function SongPreview({ song }) {
   return (
     <div className='art-preview flex'>
-      <Link to={`/art/${art._id}`}>
+      <Link to={`/song/${song._id}`}>
         <div className='content-img-card'>
-          <img src={art.imgUrl} alt='' />
+          <img src={song.imgUrl} alt='' />
         </div>
         <div className='content-card flex column'>
-          <h4>{art.title}</h4>
-          <p>{art.artist.fullname}</p>
-          <h5>${art.price}</h5>
+          <h4>{song.title}</h4>
+          <p>{song.singer.fullname}</p>
+          <h5>{song.year}</h5>
         </div>
       </Link>
     </div>

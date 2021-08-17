@@ -1,13 +1,13 @@
 import { Home } from './pages/util/Home.jsx';
 import { About } from './pages/util/About.jsx';
-import { ArtApp } from './pages/art/ArtApp.jsx';
+import { SongApp } from './pages/art/SongApp.jsx';
 import { ArtEdit } from './pages/art/ArtEdit.jsx';
-import { ArtDetails } from './pages/art/ArtDetails.jsx';
+import { SongDetails } from './pages/SongDetails.jsx';
 import { ArtAdd } from './pages/art/ArtAdd.jsx';
 import { Account } from './pages/user/Account.jsx';
 import { ArtCart } from './pages/art/ArtCart.jsx';
 import { Checkout } from './pages/art/Checkout.jsx';
-import { ArtistProfile } from './pages/artist/ArtistProfile.jsx';
+import { SingerProfile } from './pages/singer/SingerProfile.jsx';
 import { Wishlist } from './pages/art/Wishlist.jsx';
 
 
@@ -19,24 +19,24 @@ export const routes = [
         component: Home,
     },
     {
-        path: '/art',
-        component: ArtApp,
+        path: '/song',
+        component: SongApp,
     },
     {
         path: '/art/edit/:artId',
         component: ArtEdit,
     },
     {
-        path: '/artist/:artistId',
-        component: ArtistProfile,
+        path: '/singer/:singerId',
+        component: SingerProfile,
     },
     {
         path: '/art/add',
         component: ArtAdd,
     },
     {
-        path: '/art/:artId',
-        component: ArtDetails,
+        path: '/song/:songId',
+        component: SongDetails,
     },
     {
         path: '/about',

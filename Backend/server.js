@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')
-const artRoutes = require('./api/art/art.routes')
+const songRoutes = require('./api/song/song.routes')
 
 app.get('/api/setup-session', (req, res) => {
     req.session.connectedAt = Date.now()
@@ -35,9 +35,9 @@ app.get('/api/setup-session', (req, res) => {
     res.end()
 })
 
-app.use('/api/art', artRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoutes)
+app.use('/api/song', songRoutes)
 
 app.get('/**', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
