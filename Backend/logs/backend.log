@@ -44,3 +44,16 @@
 8/17/2021, 3:50:19 PM - INFO - Server is running on port: 3030 
 8/17/2021, 5:55:32 PM - INFO - Server is running on port: 3030 
 8/17/2021, 5:55:43 PM - INFO - Server is running on port: 3030 
+8/18/2021, 11:06:33 AM - INFO - Server is running on port: 3030 
+8/18/2021, 5:49:00 PM - ERROR - while finding song undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:49:00 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:50:16 PM - ERROR - while finding song undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:50:16 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:51:39 PM - ERROR - while finding song undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:51:39 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:51:45 PM - ERROR - while finding song undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:51:45 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:52:14 PM - ERROR - while finding song undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:52:14 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:52:29 PM - ERROR - while finding song undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/18/2021, 5:52:29 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 

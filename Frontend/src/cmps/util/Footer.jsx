@@ -1,11 +1,10 @@
 import React from 'react'
-export class Footer extends React.Component {
 
-    render() {
+export function Footer() {
+
         return (
             <footer className="app-footer">
-                <p>coffeerights ARTOUR Marketplace &copy; </p>
+                <p>Copyrights YOUTUME by Tal Cohen &copy; </p>
             </footer>
         )
-    }
 }

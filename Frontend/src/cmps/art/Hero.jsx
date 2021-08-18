@@ -1,10 +1,8 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 
-export class Hero extends React.Component {
+export function Hero() {
 
-
-  render() {
     return (
       <div className="carousel-container">
         <div className="main-hero-content">
@@ -22,4 +20,3 @@ export class Hero extends React.Component {
 
     );
   }
-}

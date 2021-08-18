@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { store } from './store/store.js'
 import { Provider } from 'react-redux'
 import {App} from './App.jsx';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
-
 import reportWebVitals from './reportWebVitals';
-import { store } from './store/store.js'
 
 
 ReactDOM.render(
