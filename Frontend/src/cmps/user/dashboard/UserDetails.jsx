@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button } from '@material-ui/core';
 import EditIcon from '@material-ui/icons/Edit';
 import { UserForm } from '../UserForm';
-import { Avatar } from '../../util/Avatar';
+import { Avatar } from '../../Avatar';
 
 export class UserDetails extends Component {
   state = { isEditing: false };

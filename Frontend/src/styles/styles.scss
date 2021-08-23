@@ -11,24 +11,20 @@
 @import './basics/layout.scss';
 
 //CMPS
-@import './cmps/art-preview.scss';
-@import './cmps/art-list.scss';
+@import './cmps/song-preview.scss';
+@import './cmps/song-list.scss';
 @import './cmps/header.scss';
-@import './cmps/modal.scss';
-@import './cmps/footer.scss';
 @import './cmps/avatar.scss';
 @import './cmps/user-dashboard.scss';
 @import './cmps/user-details.scss';
-@import './cmps/art-form.scss';
+@import './cmps/song-form.scss';
 @import './cmps/user-form.scss';
 @import './cmps/user-arts.scss';
 @import './cmps/user-orders.scss';
 @import './cmps/login.scss';
-@import './cmps/reset-password.scss';
 @import './cmps/desktop-nav.scss';
 @import './cmps/mobile-nav.scss';
 @import './cmps/loader.scss';
-@import './cmps/search-modal.scss';
 @import './cmps/empty-state.scss';
 
 //PAGES

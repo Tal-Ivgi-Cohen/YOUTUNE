@@ -5,9 +5,7 @@ import {
   Redirect,
 } from 'react-router-dom';
 import { routes } from './routes.js';
-import { Header } from './cmps/util/header/Header.jsx';
-import { Footer } from './cmps/util/Footer.jsx';
-
+import { Header } from './cmps/Header.jsx';
 import './styles/styles.scss';
 
 export function App() {
@@ -32,9 +30,7 @@ export function App() {
             ))}
           </Switch>
         </main>
-        <footer>
-          <Footer />
-        </footer>
+       <footer />
       </div>
     </Router>
   );

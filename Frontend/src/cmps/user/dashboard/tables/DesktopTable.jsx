@@ -6,7 +6,7 @@ import {
   TableCell,
   TableBody,
 } from '@material-ui/core';
-import { EmptyState } from '../../../util/EmptyState';
+import { EmptyState } from '../../../EmptyState';
 
 export function DesktopTable({ table, emptyTxt }) {
   return (

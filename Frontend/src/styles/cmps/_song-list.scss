@@ -1,0 +1,17 @@
+.song-list {
+    display: grid;
+    width: 100%;
+    gap: 0.625rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+}
+.song-list-title{
+    margin-top: 10px;
+}
+.songworks-img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+    border: 0.5px solid $clr4;
+}
+

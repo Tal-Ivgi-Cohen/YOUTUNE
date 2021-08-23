@@ -1,7 +1,7 @@
 import React from 'react';
 import { UserForm } from '../UserForm';
 
-export function SignUp({ signup, history }) {
+export const SignUp = ({ signup, history }) => {
   const cancel = () => history.push('/account/login');
   return (
     <div className='signup'>

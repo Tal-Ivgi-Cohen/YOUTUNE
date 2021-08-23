@@ -1,44 +1,77 @@
 .app-header {
-  background-color: $clr6 !important;
-  box-shadow: none !important;
-  color: $clr1 !important;
-}
-.app-header > div {
-  width: 100vw;
-  left: 0;
-  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $clr6;
+  grid-column: 1 /-1;
+  margin-bottom: 5px;
+
+  .logo {
+      width: 300px;
+      height: 200px;
+  }
+
+  nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 25px;
+
+      > * {
+          &:hover {
+              color: white;
+          }
+          &.active {
+              color: rgba(243, 245, 119, 0.904);
+          }
+      }
+  }
 }
 
-.drawer-content {
-  display: grid !important;
-  grid-template-rows: auto 1fr;
-  width: 100%;
-  min-width: fit-content;
-  max-width: 250px;
-  padding: 10px;
+@media (max-width: $normal-breakpoint) {
+  .app-header {
+      .logo {
+          width: 300px;
+          height: 200px;
+      }
+      nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: 25px;
+      }
+  }
 }
-
-.drawer-content button {
-  width: fit-content;
-  justify-self: end;
+@media (max-width: $narrow-breakpoint) {
+  .app-header {
+      .logo {
+          width: 250px;
+          height: 150px;
+      }
+      nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: 15px;
+      }
+  }
 }
-
-.drawer-content > div {
-  display: grid;
-  height: fit-content;
-  grid-auto-flow: row;
-  grid-gap: 10px;
-  font-family: neuzeit !important;
-}
-
 @media (max-width: $mobile-breakpoint) {
-  .app-header > div {
-    font-size: 16px;
-  }
-  .app-header h1 {
-    font-size: 35px;
-  }
-  .app-header svg {
-    font-size: 30px;
+  .app-header {
+      .logo {
+          width: 150px;
+          height: 100px;
+      }
+      nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: 10px;
+          a{
+              font-size: 14px;
+          }
+      }
   }
 }

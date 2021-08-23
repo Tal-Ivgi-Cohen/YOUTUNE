@@ -1,17 +1,10 @@
-import { Home } from './pages/util/Home.jsx';
-import { About } from './pages/util/About.jsx';
-import { SongApp } from './pages/art/SongApp.jsx';
-import { ArtEdit } from './pages/art/ArtEdit.jsx';
+import { Home } from './pages/Home.jsx';
+import { SongApp } from './pages/SongApp.jsx';
+import { SongEdit } from './pages/SongEdit.jsx';
 import { SongDetails } from './pages/SongDetails.jsx';
-import { ArtAdd } from './pages/art/ArtAdd.jsx';
-import { Account } from './pages/user/Account.jsx';
-import { ArtCart } from './pages/art/ArtCart.jsx';
-import { Checkout } from './pages/art/Checkout.jsx';
-import { SingerProfile } from './pages/singer/SingerProfile.jsx';
-import { Wishlist } from './pages/art/Wishlist.jsx';
-
-
-
+import { SongAdd } from './pages/SongAdd.jsx';
+import { Account } from './cmps/Account.jsx';
+import { SingerProfile } from './pages/SingerProfile.jsx';
 
 export const routes = [
     {
@@ -23,39 +16,23 @@ export const routes = [
         component: SongApp,
     },
     {
-        path: '/art/edit/:artId',
-        component: ArtEdit,
+        path: '/song/edit/:songId',
+        component: SongEdit,
     },
     {
         path: '/singer/:singerId',
         component: SingerProfile,
     },
     {
-        path: '/art/add',
-        component: ArtAdd,
+        path: '/song/add',
+        component: SongAdd,
     },
     {
         path: '/song/:songId',
         component: SongDetails,
     },
     {
-        path: '/about',
-        component: About,
-    },
-    {
-        path: '/cart',
-        component: ArtCart,
-    },
-    {
-        path: '/checkout',
-        component: Checkout,
-    },
-    {
         path: '/account/:tab?',
         component: Account
     },
-    {
-        path: '/wishlist',
-        component: Wishlist
-    }
 ];

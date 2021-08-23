@@ -57,3 +57,31 @@
 8/18/2021, 5:52:14 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
 8/18/2021, 5:52:29 PM - ERROR - while finding song undefined | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
 8/18/2021, 5:52:29 PM - ERROR - Failed to get song | Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters 
+8/20/2021, 12:59:56 PM - INFO - Server is running on port: 3030 
+8/20/2021, 1:01:42 PM - INFO - Server is running on port: 3030 
+8/22/2021, 9:19:41 AM - INFO - Server is running on port: 3030 
+8/22/2021, 9:20:47 AM - INFO - Server is running on port: 3030 
+8/22/2021, 12:08:43 PM - DEBUG - auth.service - login with email: undefined 
+8/22/2021, 12:08:43 PM - ERROR - Failed to Login Invalid mail or password 
+8/23/2021, 9:22:36 AM - INFO - Server is running on port: 3030 
+8/23/2021, 10:23:19 AM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 10:24:09 AM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 10:27:28 AM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 11:15:37 AM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 11:21:21 AM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 2:45:16 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 2:55:21 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 3:04:48 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 3:11:59 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 3:12:33 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 3:32:35 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 3:36:18 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 4:20:51 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 4:21:48 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 4:32:27 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 4:34:46 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 4:37:02 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 4:49:21 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 4:52:22 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 5:13:05 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/23/2021, 6:00:40 PM - DEBUG - auth.service - login with email: david@fake.com 

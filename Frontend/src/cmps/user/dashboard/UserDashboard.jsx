@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import { UserArts } from './UserArts.jsx';
-import { UserOrders } from './UserOrders.jsx';
+import { UserSongs } from './UserSongs.jsx';
 import { UserDetails } from './UserDetails.jsx';
-import { artService } from '../../../services/art.service.js';
+import { songService } from '../../../services/song.service.js'
 import { DesktopTabs } from './tabs/DesktopTabs.jsx';
 import { MobileTabs } from './tabs/MobileTabs.jsx';
+
 
 export class UserDashboard extends Component {
   state = {
     currTab: 'details',
-    arts: [],
+    songs: [],
     isMobileView: false,
   };
 
   async componentDidMount() {
-    // check if desktop or mobile
     const setResponsiveness = () => {
       return window.innerWidth < 900
         ? this.setState({ isMobileView: true })
@@ -23,31 +22,29 @@ export class UserDashboard extends Component {
     setResponsiveness();
     window.addEventListener('resize', () => setResponsiveness());
 
-    // check current tab
     this.props.history.push(`/account/${this.state.currTab}`);
     const { tab } = this.props;
     if (tab && this.tabs.includes(tab)) {
       this.setCurrTab(tab);
     }
-    await this.setArts();
+    await this.setSongs();
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', () => this.setResponsiveness());
   }
 
-  setArts = async () => {
-    const arts = [];
+  setSongs = async () => {
+    const songs = [];
     await this.props.userOrders.forEach(async (order) => {
-      const art = await artService.getById(order.artId);
-      arts.push(art);
+      const song = await songService.getById(order.songId);
+      songs.push(song);
     });
-    this.setState({ arts });
+    this.setState({ songs });
   };
 
   setCurrTab = (tab) => {
     if (tab === 'logout') {
-      // logout & set tab to default
       this.props.logout();
       tab = 'details';
     }
@@ -55,29 +52,27 @@ export class UserDashboard extends Component {
     this.props.history.push(`/account/${tab}`);
   };
   getCurrTab = () => {
-    const { currTab, arts, isMobileView } = this.state;
-    const { user, userArts, userOrders, removeArt, updateUser } = this.props;
+    const { currTab, songs, isMobileView } = this.state;
+    const { user, userSongs, userOrders, removeSong, updateUser } = this.props;
     switch (currTab) {
       case 'details':
         return <UserDetails user={user} updateUser={updateUser} />;
-      case 'arts':
+      case 'songs':
         return (
-          <UserArts
-            arts={userArts}
-            removeArt={removeArt}
+          <UserSongs
+            songs={userSongs}
+            removeSong={removeSong}
             isMobileView={isMobileView}
           />
         );
-      case 'orders':
-        return <UserOrders arts={arts} isMobileView={isMobileView} />;
       default:
         return <UserDetails user={user} updateUser={updateUser} />;
     }
   };
 
-  tabs = this.props.user.isArtist
-    ? ['details', 'arts', 'orders', 'logout']
-    : ['details', 'orders', 'logout'];
+  tabs = this.props.user.isSinger
+    ? ['details', 'songs', 'logout']
+    : ['details', 'logout'];
 
   render() {
     const { currTab, isMobileView } = this.state;
@@ -103,3 +98,4 @@ export class UserDashboard extends Component {
     );
   }
 }
+

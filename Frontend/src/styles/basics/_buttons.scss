@@ -1,5 +1,4 @@
 button {
-  // border:none;
   border: solid 1px $clr2;
   color: $clr2;
   background-color: inherit;
@@ -21,10 +20,4 @@ button {
 .add-art-page button {
   width: fit-content;
   padding: 10px;
-}
-
-.close-search-modal-btn {
-  justify-self: start;
-  width: fit-content;
-  height: fit-content;
 }

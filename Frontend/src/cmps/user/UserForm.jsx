@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-import { ImgUploadPreview } from '../util/ImgUploadPreview';
+//import { ImgUploadPreview } from '../util/ImgUploadPreview';
 import { withStyles } from '@material-ui/styles';
 
 const ArtistSwitch = withStyles({
@@ -171,12 +171,12 @@ export class UserForm extends Component {
             </section>
           </section>
           <section className='form-img'>
-            <ImgUploadPreview
+           {/*} <ImgUploadPreview
               imgUrl={imgUrl}
               onImgChange={this.onImgChange}
               showAvatar={true}
               fullname={fullname}
-            />
+              />*/}
             <FormControlLabel
               control={
                 <ArtistSwitch

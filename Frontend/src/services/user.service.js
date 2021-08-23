@@ -36,12 +36,10 @@ async function logout() {
     return await httpService.post('auth/logout')
 }
 
-
 async function getLoggedinUser(userId) {
     const loggedInUser = await httpService.get(`user/${userId}`);
     return loggedInUser;
 }
-
 
 async function update(user) {
     user = await httpService.put(`user/${user._id}`, user)
