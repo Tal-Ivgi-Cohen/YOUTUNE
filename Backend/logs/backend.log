@@ -85,3 +85,12 @@
 8/23/2021, 4:52:22 PM - DEBUG - auth.service - login with email: david@fake.com 
 8/23/2021, 5:13:05 PM - DEBUG - auth.service - login with email: david@fake.com 
 8/23/2021, 6:00:40 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 1:46:49 PM - INFO - Server is running on port: 3030 
+8/24/2021, 1:54:48 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 1:56:37 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 1:56:51 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 2:02:20 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 2:23:46 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 2:23:57 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 2:24:14 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 2:40:47 PM - DEBUG - auth.service - login with email: david@fake.com 

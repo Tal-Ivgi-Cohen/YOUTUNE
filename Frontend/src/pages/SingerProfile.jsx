@@ -33,14 +33,14 @@ export const SingerProfile = () => {
     <Fragment>
       <div className="contianer-hero">
         <img src={userSinger.imgHero} alt="" className="img-hero-artist" />
-        <div className="artist-hero-title">
+        <div className="singer-hero-title">
           <p>{userSinger.specializes}</p>
           <h1>{userSinger.fullname}</h1>
         </div>
       </div>
-      <div className="main-artist">
+      <div className="main-singer">
 
-        <div className="artist-details flex">
+        <div className="singer-details flex">
           <img src={userSinger.imgUrl} alt={userSinger.fullname} />
           <div className="text-description flex column align-center">
             <h4>About {userSinger.fullname}</h4>

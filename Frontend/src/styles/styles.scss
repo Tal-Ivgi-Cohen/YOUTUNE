@@ -19,20 +19,14 @@
 @import './cmps/user-details.scss';
 @import './cmps/song-form.scss';
 @import './cmps/user-form.scss';
-@import './cmps/user-arts.scss';
-@import './cmps/user-orders.scss';
+@import './cmps/user-songs.scss';
 @import './cmps/login.scss';
-@import './cmps/desktop-nav.scss';
-@import './cmps/mobile-nav.scss';
 @import './cmps/loader.scss';
 @import './cmps/empty-state.scss';
 
 //PAGES
-@import './pages/details.scss';
+@import './pages/song-details.scss';
 @import './pages/home.scss';
-@import './pages/art-cart.scss';
-@import './pages/artist.scss';
-@import './pages/checkout.scss';
+@import './pages/singer-profile.scss';
 @import './pages/account-page.scss';
-@import './pages/wishlist.scss';
 

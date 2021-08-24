@@ -62,7 +62,7 @@ render() {
   const { title, year, description } = song;
   const { isEditMode } = this.state
   return (
-    <div className='art-form'>
+    <div className='song-form'>
       <span className='breadcrumbs'>
         <Link to='/account'>/ Account</Link>
         <span>{isEditMode ? ' / Edit' : ' / Add'}</span>
@@ -105,7 +105,7 @@ render() {
         <section className='form-btns'>
           <Button
             variant='outlined'
-            onClick={() => this.props.history.push('/account/arts')}
+            onClick={() => this.props.history.push('/account/songs')}
           >
             Cancel
           </Button>

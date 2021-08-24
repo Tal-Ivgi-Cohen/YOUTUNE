@@ -1,4 +1,4 @@
-.user-arts {
+.user-songs {
   display: grid;
   width: 100%;
   height: 100%;
@@ -6,7 +6,7 @@
   padding: 0 20px 0 10px;
 }
 
-.user-arts .header {
+.user-songs .header {
   display: grid;
   width: 100%;
   height: fit-content;
@@ -16,27 +16,27 @@
   align-items: center;
 }
 
-.user-arts .header a {
+.user-songs .header a {
   width: fit-content;
 }
-.user-arts h3 {
+.user-songs h3 {
   margin: 0;
 }
 
-.user-arts .content {
+.user-songs .content {
   width: 100%;
   max-width: 70vw;
   overflow-x: auto;
 }
 
-.user-arts .content ul {
+.user-songs .content ul {
   width: 100%;
   list-style-type: none;
   padding: 10px;
   border: black solid 2px;
 }
 
-.user-arts .content > ul > li {
+.user-songs .content > ul > li {
   display: grid;
   grid-template-rows: 1fr auto;
   width: 100%;
@@ -45,51 +45,33 @@
   justify-content: unset !important;
 }
 
-.user-arts .item-collapsible {
-  width: 100%;
-}
-
-.user-arts section.item-btns {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: end;
-  align-items: center;
-  width: 100%;
-}
-
-.user-arts section.item-btns a {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-}
-
-.user-arts table {
+.user-songs table {
   width: 100%;
   margin: 0;
 }
 
-.user-arts table th,
-.user-arts table td {
+.user-songs table th,
+.user-songs table td {
   font-family: neuzeit !important;
 }
 
-.user-arts table td {
+.user-songs table td {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100px;
 }
 
-.user-arts table a,
-.user-arts table button {
+.user-songs table a,
+.user-songs table button {
   justify-self: center;
 }
 
-.user-arts .item-expand-btn {
+.user-songs .item-expand-btn {
   justify-self: end;
 }
 
-.user-arts .item-header {
+.user-songs .item-header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -97,11 +79,11 @@
   background-color: $clr5;
 }
 
-.user-arts .item-name {
+.user-songs .item-name {
   padding: 10px;
 }
 
-.user-arts .art-img {
+.user-songs .song-img {
   width: 100%;
   height: auto;
   border: none;
@@ -109,26 +91,26 @@
 }
 
 @media (max-width: $mobile-breakpoint) {
-  .user-arts {
+  .user-songs {
     max-width: 500px;
   }
 
-  .user-arts table {
+  .user-songs table {
     max-width: 500px;
   }
 
-  .user-arts .content {
+  .user-songs .content {
     max-width: unset;
   }
 
-  .user-arts table tr {
+  .user-songs table tr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     width: 100%;
   }
 
-  .user-arts table td {
+  .user-songs table td {
     display: grid;
     width: 100%;
     display: block;

@@ -4,7 +4,6 @@
      align-items: center;
      justify-content: center;
      display: flex;
- 
  }
  .hero-content{
      z-index: 2; 
@@ -40,8 +39,8 @@
     position: absolute;
     color: $clr6;
     z-index: 2;
-    top: 35%;
-    left: 20%;
+    top: 40%;
+    left: 40%;
     margin: 0 auto;
 
     *{
@@ -49,36 +48,30 @@
         text-align: center;
     }
     h1{
-        font-size: 55px;
+        font-size: 70px;
     }
 }
 
 @media(max-width:$normal-breakpoint){
     .main-hero-content,.artist-hero-title{
-        top: 35%;
-        left: 15%;
         h1{
-        font-size: 36px;
+        font-size: 50px;
 
         }
     }
 }
 @media(max-width:$narrow-breakpoint){
     .main-hero-content,.artist-hero-title{
-        top: 35%;
-        left: 10%; 
         h1{
-            font-size: 25px;
+            font-size: 40px;
  
         }
     }
 }
 @media(max-width:$mobile-breakpoint){
     .main-hero-content,.artist-hero-title{
-        top: 35%;
-        left: 2%;
         h1{
-            font-size: 20px;
+            font-size: 30px;
         }
     }
 }

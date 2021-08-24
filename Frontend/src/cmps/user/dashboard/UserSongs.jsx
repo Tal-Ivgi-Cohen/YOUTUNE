@@ -18,7 +18,7 @@ export function UserSongs({ songs, removeSong, isMobileView }) {
     const data = songs.map((song) => {
       return {
         details: [
-          <img className='art-img' src={song.imgUrl} alt={song.imgUrl} />,
+          <img className='song-img' src={song.imgUrl} alt={song.imgUrl} />,
           song.title,
           song.year,
           <Link to={`/song/edit/${song._id}`}>
@@ -41,7 +41,7 @@ export function UserSongs({ songs, removeSong, isMobileView }) {
     const data = songs.map((song) => {
       const details = [
         song.title,
-        <img className='art-img' src={song.imgUrl} alt={song.imgUrl} />,
+        <img className='song-img' src={song.imgUrl} alt={song.imgUrl} />,
         song.year,
       ];
       const btns = [
@@ -62,7 +62,7 @@ export function UserSongs({ songs, removeSong, isMobileView }) {
       <section className='header'>
         <h3>Songs</h3>
         <Link to={'/song/add'}>
-          <Button className='art-add-btn' variant='outlined'>
+          <Button className='song-add-btn' variant='outlined'>
             Add
           </Button>
         </Link>
@@ -71,12 +71,12 @@ export function UserSongs({ songs, removeSong, isMobileView }) {
         {isMobileView ? (
           <MobileTable
             table={getMobileTable()}
-            emptyTxt="You don't have any artworks yet. You can add through the 'Add' button above."
+            emptyTxt="You don't have any songs yet. You can add through the 'Add' button above."
           />
         ) : (
           <DesktopTable
             table={getDesktopTable()}
-            emptyTxt="You don't have any artworks yet. You can add through the 'Add' button above."
+            emptyTxt="You don't have any songs yet. You can add through the 'Add' button above."
           />
         )}
       </section>

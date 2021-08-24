@@ -1,77 +1,59 @@
 .app-header {
-  display: flex;
-  flex-direction: row;
-  height: 10vh;
-  align-items: center;
-  justify-content: space-around;
-  background-color: $clr6;
-  grid-column: 1 /-1;
-  margin-bottom: 5px;
-
-  .logo {
-      width: 300px;
-      height: 200px;
-  }
-
-  nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      gap: 25px;
-
-      > * {
-          &:hover {
-              color: white;
-          }
-          &.active {
-              color: rgba(243, 245, 119, 0.904);
-          }
-      }
-  }
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $clr6;
+    grid-column: 1 /-1;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 25px;
+        a {
+            font-size: 25px;
+        }
+        > * {
+            &:hover {
+                color: white;
+            }
+            &.active {
+                color: rgba(243, 245, 119, 0.904);
+            }
+        }
+    }
 }
 
 @media (max-width: $normal-breakpoint) {
-  .app-header {
-      .logo {
-          width: 300px;
-          height: 200px;
-      }
-      nav {
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-          gap: 25px;
-      }
-  }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 25px;
+    }
 }
+
 @media (max-width: $narrow-breakpoint) {
-  .app-header {
-      .logo {
-          width: 250px;
-          height: 150px;
-      }
-      nav {
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-          gap: 15px;
-      }
-  }
+    .app-header {
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 15px;
+        }
+    }
 }
 @media (max-width: $mobile-breakpoint) {
-  .app-header {
-      .logo {
-          width: 150px;
-          height: 100px;
-      }
-      nav {
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-          gap: 10px;
-          a{
-              font-size: 14px;
-          }
-      }
-  }
+    .app-header {
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+            a {
+                font-size: 20px;
+            }
+        }
+    }
 }

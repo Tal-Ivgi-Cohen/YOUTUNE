@@ -1,4 +1,4 @@
-.main-artist{
+.main-singer{
     margin: 0 7rem 1rem 7rem;
     p{ 
         text-align: start;
@@ -15,7 +15,7 @@
     position:relative;
     margin-bottom: 2rem;
 }
-.artist-hero-title{
+.singer-hero-title{
     color: $clr6;
     text-shadow: -1px -1px 3px $clr1;
     text-transform: uppercase;
@@ -31,7 +31,7 @@
     }
 
 }
-.artist-details{
+.singer-details{
     margin-bottom: 4rem;
     img{
         max-width: 40%;
@@ -47,7 +47,7 @@
 }
 
 @media (min-width: $mobile-breakpoint) {
-    .artist-hero-title {
+    .singer-hero-title {
         top: 30%;
         left: 20%;
         h1 {
@@ -60,7 +60,7 @@
 }
 
 @media (min-width: $narrow-breakpoint) {
-    .artist-hero-title {
+    .singer-hero-title {
         h1 {
             font-size: 45px;
         }
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: $normal-breakpoint) {
-    .artist-hero-title {
+    .singer-hero-title {
         top: 30%;
         left: 35%;
         h1 {

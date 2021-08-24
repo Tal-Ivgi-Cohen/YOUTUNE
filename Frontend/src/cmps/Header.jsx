@@ -5,7 +5,6 @@ export const Header =()=> {
 
         return (
             <header className="app-header">
-                <h1 className="logo">YOUTUNE</h1>
                 <nav>
                     <NavLink to="/">Home</NavLink> |
                     <NavLink to="/song">Explore</NavLink> |

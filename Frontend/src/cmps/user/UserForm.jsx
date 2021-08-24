@@ -8,7 +8,6 @@ import {
 } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-//import { ImgUploadPreview } from '../util/ImgUploadPreview';
 import { withStyles } from '@material-ui/styles';
 
 const ArtistSwitch = withStyles({
@@ -30,7 +29,7 @@ export class UserForm extends Component {
     email: '',
     fullname: '',
     password: '',
-    isArtist: false,
+    isSinger: false,
     isValidInput: false,
     imgUrl: '',
     orders: [],
@@ -39,14 +38,13 @@ export class UserForm extends Component {
 
   componentDidMount() {
     if (this.props.user) {
-      // Edit mode
-      const { email, fullname, password, isArtist, imgUrl, orders } =
+      const { email, fullname, password, isSinger, imgUrl, orders } =
         this.props.user;
       this.setState({
         email,
         fullname,
         password,
-        isArtist,
+        isSinger,
         isValidInput: true,
         imgUrl,
         orders,
@@ -56,7 +54,7 @@ export class UserForm extends Component {
 
   handleChange = ({ target }) => {
     const field = target.name;
-    const value = field === 'isArtist' ? target.checked : target.value;
+    const value = field === 'isSinger' ? target.checked : target.value;
     this.setState({ [field]: value }, () => {
       const { email, password } = this.state;
       let isValid =
@@ -71,23 +69,20 @@ export class UserForm extends Component {
 
   onSubmit = (ev) => {
     ev.preventDefault();
-    const { email, fullname, password, isArtist, imgUrl, orders } = this.state;
-    // TODO: validate email & password
+    const { email, fullname, password, isSinger, imgUrl, orders } = this.state;
     const userInfo = {
       email,
       fullname,
       password,
-      isArtist,
+      isSinger,
       imgUrl,
       orders,
     };
     if (this.props.user) {
-      // Edit mode
       userInfo._id = this.props.user._id;
       this.props.updateUser(userInfo);
       this.props.editModeOff();
     } else {
-      // Add mode
       userInfo.isAdmin = false;
       this.props.signup(userInfo);
     }
@@ -112,9 +107,8 @@ export class UserForm extends Component {
       email,
       fullname,
       password,
-      isArtist,
+      isSinger,
       isValidInput,
-      imgUrl,
       isTooltipOpen,
     } = this.state;
     const { cancel, editModeOff } = this.props;
@@ -171,21 +165,15 @@ export class UserForm extends Component {
             </section>
           </section>
           <section className='form-img'>
-           {/*} <ImgUploadPreview
-              imgUrl={imgUrl}
-              onImgChange={this.onImgChange}
-              showAvatar={true}
-              fullname={fullname}
-              />*/}
             <FormControlLabel
               control={
                 <ArtistSwitch
-                  checked={isArtist}
+                  checked={isSinger}
                   onChange={this.handleChange}
-                  name='isArtist'
+                  name='isSinger'
                 />
               }
-              label="I'm an artist"
+              label="I'm a singer"
             />
           </section>
           <section className='form-btns'>
@@ -202,4 +190,3 @@ export class UserForm extends Component {
   }
 }
 
-// export const UserForm = withStyles(styles)(_UserForm);

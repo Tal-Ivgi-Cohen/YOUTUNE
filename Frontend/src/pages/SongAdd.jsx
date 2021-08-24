@@ -14,7 +14,7 @@ export const SongAdd = ({ history }) => {
 
 
   return (
-    <section className='add-art-page'>
+    <section className='add-song-page'>
       <SongForm history={history} saveSong={saveSong} user={user} />
     </section>
   );
