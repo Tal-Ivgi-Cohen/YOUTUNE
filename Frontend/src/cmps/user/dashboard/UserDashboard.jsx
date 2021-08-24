@@ -52,8 +52,8 @@ export class UserDashboard extends Component {
     this.props.history.push(`/account/${tab}`);
   };
   getCurrTab = () => {
-    const { currTab, songs, isMobileView } = this.state;
-    const { user, userSongs, userOrders, removeSong, updateUser } = this.props;
+    const { currTab, isMobileView } = this.state;
+    const { user, userSongs, removeSong, updateUser } = this.props;
     switch (currTab) {
       case 'details':
         return <UserDetails user={user} updateUser={updateUser} />;

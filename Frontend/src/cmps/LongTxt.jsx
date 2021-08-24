@@ -5,6 +5,7 @@ export const LongTxt = ({ description }) => {
 
     const toggleIsLongTxtShown = useCallback(() => {
         setisLongTxtShown(!isLongTxtShown)
+        // eslint-disable-next-line
     }, [])
 
     let text = description;
