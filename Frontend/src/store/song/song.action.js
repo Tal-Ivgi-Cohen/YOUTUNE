@@ -25,6 +25,7 @@ export function saveSong(song) {
         try {
             await songService.save(song)
             dispatch({ type: song._id ? 'UPDATE_SONG' : 'ADD_SONG', song: song })
+            console.log('song._id ',song._id );
         } catch (err) {
            console.log(`SongsActions: err in ${song._id ? 'update song' : 'add song'}${err}`)
         }

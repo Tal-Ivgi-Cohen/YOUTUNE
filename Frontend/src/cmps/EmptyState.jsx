@@ -1,5 +1,5 @@
 import React from 'react';
 
-export function EmptyState({ txt }) {
+export const EmptyState = ({ txt }) => {
   return <div className='empty-state'>{txt}</div>;
 }

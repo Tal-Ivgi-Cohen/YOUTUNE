@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function DesktopTabs({ tabs, currTab, setCurrTab }) {
+export const DesktopTabs=({ tabs, currTab, setCurrTab })=> {
   return (
     <ul className='desktop-view'>
       {tabs.map((tab, idx) => (

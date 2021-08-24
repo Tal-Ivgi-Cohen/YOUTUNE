@@ -23,7 +23,6 @@ export class LoginForm extends Component {
   };
 
   login = (ev) => {
-    //console.log('ev', ev)
     ev.preventDefault();
     const { email, password } = this.state;
     this.props.login({ email, password });

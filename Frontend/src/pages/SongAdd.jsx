@@ -11,8 +11,7 @@ export const SongAdd = ({ history }) => {
     dispatch(saveSong())
     // eslint-disable-next-line
   }, [])
-
-
+  
   return (
     <section className='add-song-page'>
       <SongForm history={history} saveSong={saveSong} user={user} />

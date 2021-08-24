@@ -4,6 +4,7 @@ import { List, ListItemText, Collapse, ListItem } from '@material-ui/core';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 
+
 export class MobileTable extends Component {
   state = { itemsIsOpen: [false] };
 

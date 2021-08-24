@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core';
 import { EmptyState } from '../../../EmptyState';
 
-export function DesktopTable({ table, emptyTxt }) {
+export const DesktopTable = ({ table, emptyTxt }) => {
   return (
     <>
       {table.data.length ? (

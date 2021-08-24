@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export function SongPreview({ song }) {
+export const SongPreview = ({ song }) => {
   return (
     <div className='song-preview flex'>
       <Link to={`/song/${song._id}`}>

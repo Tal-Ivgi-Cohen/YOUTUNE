@@ -5,7 +5,6 @@ import { songService } from '../../../services/song.service.js'
 import { DesktopTabs } from './tabs/DesktopTabs.jsx';
 import { MobileTabs } from './tabs/MobileTabs.jsx';
 
-
 export class UserDashboard extends Component {
   state = {
     currTab: 'details',

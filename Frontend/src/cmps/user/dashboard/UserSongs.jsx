@@ -2,17 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
-import EditIcon from '@material-ui/icons/Edit';
 import { MobileTable } from './tables/MobileTable';
 import { DesktopTable } from './tables/DesktopTable';
 
-export function UserSongs({ songs, removeSong, isMobileView }) {
+export const UserSongs=({ songs, removeSong, isMobileView }) => {
   const getDesktopTable = () => {
     const columns = [
       'Image',
       'Title',
       'Year',
-      'Edit',
       'Delete',
     ];
     const data = songs.map((song) => {
@@ -21,9 +19,6 @@ export function UserSongs({ songs, removeSong, isMobileView }) {
           <img className='song-img' src={song.imgUrl} alt={song.imgUrl} />,
           song.title,
           song.year,
-          <Link to={`/song/edit/${song._id}`}>
-            <EditIcon />
-          </Link>,
           <Button onClick={() => removeSong(song._id)}>
             <DeleteIcon />
           </Button>,
@@ -45,9 +40,6 @@ export function UserSongs({ songs, removeSong, isMobileView }) {
         song.year,
       ];
       const btns = [
-        <Link to={`/song/edit/${song._id}`}>
-          <EditIcon />
-        </Link>,
         <Button onClick={() => removeSong(song._id)}>
           <DeleteIcon />
         </Button>,

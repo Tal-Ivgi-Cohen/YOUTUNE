@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuItem, TextField } from '@material-ui/core';
 
-export function MobileTabs({ currTab, setCurrTab, tabs }) {
+export const MobileTabs = ({ currTab, setCurrTab, tabs }) => {
   const handleChange = ({ target }) => {
     const value = target.value;
     setCurrTab(value);

@@ -10,14 +10,15 @@ export const SongEdit = ({ match, history }) => {
   const { selectedSong } = useSelector(state => state.songModule)
 
   useEffect(() => {
-    async function loadSong() {
+   function loadSong() {
       const { songId } = match.params;
-      await dispatch(setSong(songId));
+      dispatch(setSong(songId));
     }
     loadSong()
+    // eslint-disable-next-line
   }, []);
 
-  const { songId } =match.params;
+  const { songId } = match.params;
   return selectedSong && selectedSong._id === songId ? (
     <SongForm
       selectedSong={selectedSong}
