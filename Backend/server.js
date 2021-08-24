@@ -31,7 +31,6 @@ const songRoutes = require('./api/song/song.routes')
 
 app.get('/api/setup-session', (req, res) => {
     req.session.connectedAt = Date.now()
-    console.log('setup-session:', req.sessionID);
     res.end()
 })
 

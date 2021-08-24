@@ -121,3 +121,9 @@
 8/24/2021, 3:56:36 PM - DEBUG - auth.service - login with email: david@fake.com 
 8/24/2021, 4:08:44 PM - DEBUG - auth.service - login with email: david@fake.com 
 8/24/2021, 4:09:01 PM - DEBUG - auth.service - login with email: david@fake.com 
+8/24/2021, 4:16:55 PM - INFO - Server is running on port: 3030 
+8/24/2021, 4:17:03 PM - INFO - Server is running on port: 3030 
+8/24/2021, 4:17:10 PM - INFO - Server is running on port: 3030 
+8/24/2021, 4:17:20 PM - INFO - Server is running on port: 3030 
+8/24/2021, 4:17:26 PM - INFO - Server is running on port: 3030 
+8/24/2021, 4:17:32 PM - INFO - Server is running on port: 3030 

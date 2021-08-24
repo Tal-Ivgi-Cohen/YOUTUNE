@@ -31,7 +31,6 @@ async function getById(songId) {
 
 
 async function remove(songId) {
-    console.log('songId', songId);
     try {
         const collection = await dbService.getCollection('song')
         await collection.deleteOne({ '_id': ObjectId(songId) })

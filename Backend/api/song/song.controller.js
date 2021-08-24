@@ -20,7 +20,6 @@ async function getSong(req, res) {
 }
 
 async function getSongs(req, res) {
-    console.log('req.query', req.query);
     const filterBy = {}
     const { _id, singerId } = req.query
     try {

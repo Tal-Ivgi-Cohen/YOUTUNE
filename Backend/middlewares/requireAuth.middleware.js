@@ -10,7 +10,6 @@ async function requireAuth(req, res, next) {
 
 async function requireSinger(req, res, next) {
   const user = req.session.user
-  console.log(user);
   if (!user.isSinger) {
     logger.warn(user.fullname + ' Attempt to perform admin action')
     res.status(403).end('Unauthorized Enough..')
