@@ -32,15 +32,16 @@
 
 }
 .singer-details{
+    width: 300px;
     margin-bottom: 4rem;
     img{
-        max-width: 40%;
+        max-width: 20%;
         max-height: 21.875rem;
         margin: 0 3.125rem 0 1.25rem;
         object-fit: contain;
     }
     .text-description{
-        width: 56.25rem;
+        width: 40rem;
         margin-top: 1.5rem;
     }
  

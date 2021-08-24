@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5458598a.chunk.css",
+    "main.js": "/static/js/main.9b88c1b8.chunk.js",
+    "main.js.map": "/static/js/main.9b88c1b8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bc52e409.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bc52e409.js.map",
+    "static/js/2.c08b5647.chunk.js": "/static/js/2.c08b5647.chunk.js",
+    "static/js/2.c08b5647.chunk.js.map": "/static/js/2.c08b5647.chunk.js.map",
+    "static/js/3.8bc37d98.chunk.js": "/static/js/3.8bc37d98.chunk.js",
+    "static/js/3.8bc37d98.chunk.js.map": "/static/js/3.8bc37d98.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5458598a.chunk.css.map": "/static/css/main.5458598a.chunk.css.map",
+    "static/js/2.c08b5647.chunk.js.LICENSE.txt": "/static/js/2.c08b5647.chunk.js.LICENSE.txt",
+    "static/media/styles.scss": "/static/media/Neuzeit Grotesk W01 Regular.825a6529.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc52e409.js",
+    "static/js/2.c08b5647.chunk.js",
+    "static/css/main.5458598a.chunk.css",
+    "static/js/main.9b88c1b8.chunk.js"
+  ]
+}
