@@ -1,4 +1,3 @@
-const logger = require('../service/logger.service')
 const asyncLocalStorage = require('../service/als.service')
 
 async function setupAsyncLocalStorage(req, res, next) {
