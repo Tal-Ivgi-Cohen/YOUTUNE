@@ -14,7 +14,6 @@
     text-transform: uppercase;
     position: absolute;
     top: 35%;
-    left: 40%;
     *{
         font-family: neuzeit;
         text-align: center;
@@ -52,7 +51,7 @@
 @media (min-width: $mobile-breakpoint) {
     .artist-hero-title {
         top: 30%;
-        left: 20%;
+        left: 9%;
         h1 {
             font-size: 36px;
         }
@@ -76,7 +75,7 @@
 @media (min-width: $normal-breakpoint) {
     .artist-hero-title {
         top: 30%;
-        left: 35%;
+        left: 40%;
         h1 {
             font-size: 55px;
         }
